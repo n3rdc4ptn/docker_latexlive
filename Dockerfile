@@ -15,6 +15,6 @@ RUN bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "$
 # Install Apt packages
 RUN apt-get update
 
-RUN DEBIAN_FRONTEND="noninteractive" apt-get install texlive texlive-lang-german texlive-latex-extra -y
+RUN DEBIAN_FRONTEND="noninteractive" apt-get install texlive texlive-lang-german texlive-latex-extra latexmk -y
 
 CMD ["/bin/bash"]
