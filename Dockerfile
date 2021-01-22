@@ -3,7 +3,7 @@ FROM ubuntu:20.10
 # Options for setup script
 ARG INSTALL_ZSH="true"
 ARG UPGRADE_PACKAGES="true"
-ARG USERNAME=codespaces
+ARG USERNAME=codespace
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
